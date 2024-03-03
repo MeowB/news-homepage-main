@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  width: 100%;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body header, body main, body footer {
+  padding: 20px;
+}
+body header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .desktop-nav {
+  display: none;
+}
+body header .background-wrapper {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+}
+body header .background-wrapper nav {
+  position: absolute;
+  right: 0;
+  background-color: #fffdfa;
+  height: 100vh;
+  width: 60%;
+}
+body header .background-wrapper nav img {
+  position: absolute;
+  right: inherit;
+  padding: 25px 15px;
+}
+body header .background-wrapper nav ul {
+  padding-top: 100px;
+  list-style: none;
+}
+body header .background-wrapper nav ul li {
+  padding: 10px 20px;
+}
+body header a {
+  color: #5d5f79;
+  text-decoration: none;
+}
+body header a:hover {
+  color: #f15e50;
+}
+body main .main-content img {
+  width: 100%;
+}
+body main .main-content h1 {
+  font-size: 2.5em;
+  padding-top: 20px;
+}
+body main .main-content p {
+  padding-top: 20px;
+  line-height: 20px;
+  color: #5d5f79;
+}
+body main .main-content button {
+  margin-top: 20px;
+  padding: 15px 35px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #fffdfa;
+  background-color: #f15e50;
+  border: none;
+  cursor: pointer;
+}
+body main .main-content button:hover {
+  background-color: #00001a;
+}
+body main .aside {
+  background-color: #00001a;
+  color: #fffdfa;
+  padding: 20px;
+  margin-top: 50px;
+}
+body main .aside h2 {
+  color: #e9ab53;
+}
+body main .aside ul {
+  list-style: none;
+}
+body main .aside ul li {
+  padding: 30px 0;
+}
+body main .aside ul li p {
+  color: #c5c6ce;
+  padding-top: 15px;
+}
+body main .aside ul li:first-child {
+  border-bottom: 1px solid #c5c6ce;
+}
+body main .aside ul li:last-child {
+  border-top: 1px solid #c5c6ce;
+}
+body main .aside a {
+  color: #fffdfa;
+  text-decoration: none;
+}
+body main .aside a:hover {
+  color: #e9ab53;
+}
+body main .top-articles {
+  padding-top: 50px;
+}
+body main .top-articles ul li {
+  display: flex;
+  padding: 15px 0;
+}
+body main .top-articles ul li .text-content {
+  padding-left: 15px;
+}
+body main .top-articles ul li .text-content p:first-child {
+  font-size: 2em;
+  font-weight: bold;
+  color: #c5c6ce;
+}
+body main .top-articles ul li .text-content h3 {
+  color: #00001a;
+  padding-top: 10px;
+}
+body main .top-articles ul li .text-content p:last-child {
+  padding-top: 10px;
+  line-height: 25px;
+  color: #5d5f79;
+}
+body main .top-articles ul li img {
+  width: 100px;
+}
+body main .top-articles a {
+  color: #00001a;
+  text-decoration: none;
+}
+body main .top-articles a:hover {
+  color: #f15e50;
+}
+
+@media only screen and (min-width: 800px) {
+  body header, body main, body footer {
+    padding: 0;
+    width: 80%;
+    margin: auto;
+  }
+  body header {
+    padding-top: 50px;
+  }
+  body header .hamburger-open {
+    display: none;
+  }
+  body header .hamburger {
+    display: none;
+  }
+  body header .desktop-nav {
+    display: block;
+  }
+  body header .desktop-nav ul {
+    display: flex;
+    list-style: none;
+  }
+  body header .desktop-nav ul li {
+    padding: 0 15px;
+  }
+  body main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+  body main .main-content {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  body main .main-content h1 {
+    width: 40%;
+    font-weight: 800;
+  }
+  body main .main-content .text-content {
+    width: 50%;
+  }
+  body main .aside {
+    width: 40%;
+    margin-top: 0;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .top-articles ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .top-articles ul li {
+    width: 30%;
+  }
+  .top-articles ul li img {
+    height: fit-content;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
