@@ -1,4 +1,4 @@
-Solution URL: [solution URL](https://your-solution-url.com)
+Solution URL: [solution URL](https://meowb.github.io/news-homepage-main/) 
 
 # Frontend Mentor - News homepage solution
 
